@@ -1,6 +1,31 @@
-# Contracts
+# Astaria contest details
+- Total Prize Pool: $90,500 USDC
+  - HM awards: $63,750 USDC
+  - QA report awards: $7,500 USDC
+  - Gas report awards: $3,750 USDC
+  - Judge + presort awards: $15,000 USDC
+  - Scout awards: $500 USDC
+- Join [C4 Discord](https://discord.gg/code4rena) to register
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-01-astaria-contest/submit)
+- [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
+- Starts January 5, 2023 20:00 UTC
+- Ends January 19, 2023 20:00 UTC
 
-All contracts in `src/` have accompanying interfaces in the `interfaces` folder.
+## C4udit / Publicly Known Issues
+
+The C4audit output for the contest can be found [here](add link to report) within an hour of contest opening.
+
+*Note for C4 wardens: Anything included in the C4udit output is considered a publicly known issue and is ineligible for awards.*
+
+# Overview
+
+Astaria is an NFT lending protocol offering instant liquidity to borrowers. Strategists deploy Vaults and provide updateable loan terms on a per-NFT basis. Borrowers deposit their NFTs into the Astaria protocol and to borrow according to a strategist's terms. PrivateVaults may only accept capital from the strategist that deploys them, while PublicVaults may accept capital from any liquidity providers. PublicVaults operate around an epoch system that requires liquidity providers to signal which epoch they wish to withdraw in advance.
+
+Please see https://docs.astaria.xyz/docs/intro for a detailed description of protocol functionality and smart contract architecture.
+
+# Scope
+
+All contracts in `src/` have accompanying interfaces with natspec documentation in the `interfaces` folder. Points of complexity to thoroughly audit are the validation of loan terms using merkle proofs (in VaultImplementation), and edge cases around liquidity providers withdrawing from PublicVaults through WithdrawProxies.
 
 | Contract Name                     | SLOC | Purpose                                                                                                                                                                                               |
 | --------------------------------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -22,43 +47,39 @@ All contracts in `src/` have accompanying interfaces in the `interfaces` folder.
 | lib/gpl/src/ERC4626RouterBase.sol | 33   | ERC4626 base router contract.                                                                                                                                                                         |
 | lib/gpl/src/ERC4626Router.sol     | 27   | ERC4626 router contract.                                                                                                                                                                              |
 | lib/gpl/src/Multicall.sol         | 18   | Multicall contract.                                                                                                                                                                                   |
-| **Total**                         | 3153 |
+| **Total (including interfaces)**  | 3475 |
 
+# Additional Context
 
-```ml
- src
- ├─ AstariaRouter.sol
- ├─ AstariaVaultBase.sol
- ├─ BeaconProxy.sol
- ├─ ClearingHouse.sol
- ├─ CollateralToken.sol
- ├─ LienToken.sol
- ├─ PublicVault.sol
- ├─ TransferProxy.sol
- ├─ Vault.sol
- ├─ VaultImplementation.sol
- ├─ WithdrawProxy.sol
- ├─ WithdrawVaultBase.sol
- └─ actions
-    └─ UNIV3
-       └─ClaimFees.sol
- └─ libraries
-    └─ Base64.sol
-    └─ CollateralLookup.sol
- └─ security
-    └─ V3SecurityHook.sol
- └─ strategies
-    └─ CollectionValidator.sol
-       ├─ UNI_V3Validator.sol
-       └─ UniqueValidator.sol
- └─ utils
-    ├─ Math.sol
-    ├─ MerkleProofLib.sol
-    └─ Pausable.sol
+*Sponsor, please confirm/edit the information below.*
 
+## Scoping Details 
+```
+- If you have a public code repo, please share it here: N/A
+- How many contracts are in scope?: 37 (including interfaces)
+- Total SLoC for these contracts?: 3,475
+- How many external imports are there?: 7
+- How many separate interfaces and struct definitions are there for the contracts within scope?: 25 interfaces, 35 structs  
+- Does most of your code generally use composition or inheritance?: Inheritance  
+- How many external calls?: 2
+- What is the overall line coverage percentage provided by your tests?: ~90 (`forge coverage` currently throws a "stack too deep" error on large codebases)
+- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?: Yes  
+- Please describe required context: The protocol contains a few contracts that are interwoven to maintain the entire protocol, so good understanding of one aspect helps understand settlement in other areas.   
+- Does it use an oracle?: No
+- Does the token conform to the ERC20 standard?: No token
+- Are there any novel or unique curve logic or mathematical models?: PublicVaults (open to all liquidity providers) use an epoch system which schedules withdrawals and distributes auction funds in order to ensure solvency and prevent there ever being a run on a Vault.
+- Does it use a timelock function?: Not directly, we have a method on the router fileGuardian that will be behind a timelock eventually.
+- Is it an NFT?: The protocol tokenizes loans as LienTokens and mints CollateralTokens as certificates of deposit on locked collateral.
+- Does it have an AMM?: No
+- Is it a fork of a popular project?: No 
+- Does it use rollups?: No 
+- Is it multi-chain?: No
+- Does it use a side-chain?: No
 ```
 
-For more details on the Astaria protocol and its contracts, please see the [docs](https://docs.astaria.xyz/docs/intro).
+# Tests
+
+For more details on the Astaria protocol and its contracts, see the [docs](https://docs.astaria.xyz/docs/intro)
 
 # Astaria Contracts Setup
 
