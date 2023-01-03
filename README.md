@@ -55,7 +55,7 @@ All contracts in `src/` have accompanying interfaces with natspec documentation 
 
 ## Scoping Details 
 ```
-- If you have a public code repo, please share it here: N/A
+- If you have a public code repo, please share it here: https://github.com/AstariaXYZ/astaria-core
 - How many contracts are in scope?: 37 (including interfaces)
 - Total SLoC for these contracts?: 3,475
 - How many external imports are there?: 7
