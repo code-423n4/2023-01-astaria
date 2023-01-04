@@ -46,7 +46,34 @@ All contracts in `src/` have accompanying interfaces with natspec documentation 
 | lib/gpl/src/ERC4626-Cloned.sol    | 93   | Custom base ERC4626 implementation.                                                                                                                                                                   |
 | lib/gpl/src/ERC4626RouterBase.sol | 33   | ERC4626 base router contract.                                                                                                                                                                         |
 | lib/gpl/src/ERC4626Router.sol     | 27   | ERC4626 router contract.                                                                                                                                                                              |
-| lib/gpl/src/Multicall.sol         | 18   | Multicall contract.                                                                                                                                                                                   |
+| src/interfaces/IWithdrawProxy.sol         | 79   | WithdrawProxy interface.                                                           |
+| src/interfaces/ISecurityHook.sol         | 18   | SecurityHook interface.                                                |
+| src/interfaces/IERC165.sol         | 25   | ERC165 interface.  
+| src/interfaces/ILienToken.sol         | 346   | LienToken interface.  
+| src/interfaces/ICollateralToken.sol         | 187   | CollateralToken interface.  
+| src/interfaces/IRouterBase.sol         | 22   | AstariaRouter base contract interface.   
+| src/interfaces/IERC4626.sol         | 263   | ERC4626 interface.
+| src/interfaces/IPublicVault.sol         | 173   | PublicVault interface.  
+| src/interfaces/IERC20Metadata.sol         | 19   | ERC20 metadata interface.
+| src/interfaces/IV3PositionManager.sol         | 177   | Uniswap V3 PositionManager interface.
+| src/interfaces/IFlashAction.sol         | 26   | FlashAction interface. Anyone may create a contract implementing this interface to define an action performed by a collateralized NFT in a flash loan.
+| src/interfaces/IERC721.sol         | 48   | ERC721 interface.
+| src/interfaces/IVaultImplementation.sol         | 105   | VaultImplementation interface.                 
+| src/interfaces/IERC1155.sol         | 141   | SecurityHook interface.               
+| src/interfaces/IBeacon.sol         | 23   | Beacon contract interface. 
+| src/interfaces/IAstariaVaultBase.sol         | 32   | Vault base contract interface.
+| src/interfaces/IERC721Receiver.sol         | 27   | ERC721Receiver interface.
+| src/interfaces/ITransferProxy.sol         | 23   | TransferProxy interface.                            |
+| src/interfaces/IERC1155Receiver.sol         | 58   | ERC1155Receiver interface.
+| src/interfaces/IAstariaRouter.sol         | 342   | AstariaRouter interface.
+| src/interfaces/IStrategyValidator.sol         | 26   | StrategyValidator interface.
+| src/interfaces/IERC20.sol         | 85   | ERC20 interface.
+| lib/gpl/source/interfaces/IERC4626RouterBase.sol         | 105   | ERC4626-compliant AstariaRouter base contract interface.
+| lib/gpl/source/interfaces/IERC4626Router.sol         | 58   | ERC4626-compliant AstariaRouter main contract interface.
+| lib/gpl/source/interfaces/IWETH9.sol         | 12   | ERC4626-compliant AstariaRouter base contract interface.
+| lib/gpl/source/interfaces/IUniswapV3PoolState.sol         | 116   | Uniswap V3 state contract interface.
+| lib/gpl/source/interfaces/IMulticall.sol         | 16   | Multicall interface.
+| lib/gpl/source/interfaces/IUniswapV3Factory.sol         | 78   |Uniswap V3 factory contract interface.
 | **Total (including interfaces)**  | 3475 |
 
 # Additional Context
