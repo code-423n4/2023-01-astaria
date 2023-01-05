@@ -131,6 +131,12 @@ Tests are located in src/test. To run tests, run:
 forge test --ffi
 ```
 
+Note that since ```testClaimFeesAgainstV3Liquidity()``` uses on-chain data, it will revert when running in a non-forked test environment. To run this forked test, use:
+
+```sh
+forge test --fork-url <YOUR_RPC_URL>
+```
+
 To target integration tests following common use paths, run:
 
 ```sh
