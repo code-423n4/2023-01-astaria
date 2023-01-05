@@ -159,3 +159,8 @@ To view a gas report, run:
 ```sh
 forge snapshot --gas-report --ffi
 ```
+
+When fork testing testClaimFeesAgainstV3Liquidity use the following to ensure the state data is accurate, USE A MAINNET ARCHIVE RPC  
+```sh
+forge test --ffi --match-test testClaimFeesAgainstV3Liquidity --fork-url <YOUR_RPC_HERE> --fork-block-number 15934974
+```
