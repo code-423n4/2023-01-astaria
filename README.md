@@ -114,6 +114,8 @@ Astaria runs on [Foundry](https://github.com/foundry-rs/foundry). If you don't h
 
 Note that since this codebase uses Foundry remappings for imports, cmd/ctrl-click to jump to different files is not currently supported.
 
+If you're using Slither, ensure you're using the latest version to avoid this sourceMap issue: crytic/crytic-compile#281.
+
 To install contract dependencies, run:
 
 ```sh
@@ -133,7 +135,7 @@ Tests are located in src/test. To run tests, run:
 forge test --ffi
 ```
 
-Note that since ```testClaimFeesAgainstV3Liquidity()``` uses on-chain data, it will revert when running in a non-forked test environment. To run this forked test, use:
+Note that since ```testClaimFeesAgainstV3Liquidity()``` uses Goerli on-chain data, it will revert when running in a non-forked test environment. To run this forked test, run this with a Goerli RPC URL:
 
 ```sh
 forge test --fork-url <YOUR_RPC_URL>
