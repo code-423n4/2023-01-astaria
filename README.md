@@ -171,3 +171,6 @@ When fork testing testClaimFeesAgainstV3Liquidity use the following to ensure th
 ```sh
 forge test --ffi --match-test testClaimFeesAgainstV3Liquidity --fork-url <YOUR_RPC_HERE> --fork-block-number 15934974
 ```
+
+#Quickstart
+export FORK_URL="<your-mainnet-rpc-url-goes-here>" && rm -Rf 2023-01-astaria || true && git clone https://github.com/code-423n4/2023-01-astaria.git -j8 --recurse-submodules && cd 2023-01-astaria && nvm install 16.0 && foundryup && forge install && yarn install && forge test --ffi --fork-url $FORK_URL --fork-block-number 15934974 --gas-report
