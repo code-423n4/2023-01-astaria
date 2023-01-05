@@ -78,8 +78,6 @@ All contracts in `src/` have accompanying interfaces with natspec documentation 
 
 # Additional Context
 
-*Sponsor, please confirm/edit the information below.*
-
 ## Scoping Details 
 ```
 - If you have a public code repo, please share it here: https://github.com/AstariaXYZ/astaria-core
