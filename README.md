@@ -132,7 +132,7 @@ sh scripts/boot-system.sh
 
 Tests are located in src/test. To run tests, run:
 
-`forge test --ffi --fork-url <your-mainnet-url> --fork-block-number 15934974 --gas-report`
+`forge test --ffi --fork-url "<your-mainnet-url>" --fork-block-number 15934974 --gas-report`
 
 
 
