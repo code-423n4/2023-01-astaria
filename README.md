@@ -17,6 +17,8 @@ The C4audit output for the contest can be found [here](https://gist.github.com/P
 
 *Note for C4 wardens: Anything included in the C4udit output is considered a publicly known issue and is ineligible for awards.*
 
+Issues reported in the public Astaria [repo](https://github.com/AstariaXYZ/astaria-core) before the start of the contest are considered known issues and are not eligible for rewards.
+
 # Overview
 
 Astaria is an NFT lending protocol offering instant liquidity to borrowers. Strategists deploy Vaults and provide updateable loan terms on a per-NFT basis. Borrowers deposit their NFTs into the Astaria protocol and to borrow according to a strategist's terms. PrivateVaults may only accept capital from the strategist that deploys them, while PublicVaults may accept capital from any liquidity providers. PublicVaults operate around an epoch system that requires liquidity providers to signal which epoch they wish to withdraw in advance.
