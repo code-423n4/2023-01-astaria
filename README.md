@@ -132,46 +132,11 @@ sh scripts/boot-system.sh
 
 Tests are located in src/test. To run tests, run:
 
-```sh
-forge test --ffi
-```
-
-Note that since ```testClaimFeesAgainstV3Liquidity()``` uses Goerli on-chain data, it will revert when running in a non-forked test environment. To run this forked test, run this with a Goerli RPC URL:
-
-```sh
-forge test --fork-url <YOUR_RPC_URL>
-```
-
-To target integration tests following common use paths, run:
-
-```sh
-forge test --ffi --match-contract AstariaTest
-```
-
-To target tests following disallowed behavior, run:
-
-```sh
-forge test --ffi --match-contract RevertTesting
-```
-
-When fork testing testClaimFeesAgainstV3Liquidity use the following to ensure the state data is accurate  
-```sh
-forge test --ffi --match-test testClaimFeesAgainstV3Liquidity --fork-url <YOUR_RPC_HERE> --fork-block-number 15934974
-```
+`forge test --ffi --fork-url <your-mainnet-url> --fork-block-number 15934974 --gas-report`
 
 
-Edge cases around withdrawing and other complex protocol usage are found in the WithdrawTest and IntegrationTest contracts.
 
-To view a gas report, run:
-```sh
-forge snapshot --gas-report --ffi
-```
-
-When fork testing testClaimFeesAgainstV3Liquidity use the following to ensure the state data is accurate, USE A MAINNET ARCHIVE RPC  
-```sh
-forge test --ffi --match-test testClaimFeesAgainstV3Liquidity --fork-url <YOUR_RPC_HERE> --fork-block-number 15934974
-```
 
 # Quickstart
 
-export FORK_URL="<your-mainnet-rpc-url-goes-here>" && rm -Rf 2023-01-astaria || true && git clone https://github.com/code-423n4/2023-01-astaria.git -j8 --recurse-submodules && cd 2023-01-astaria && nvm install 16.0 && foundryup && forge install && yarn install && forge test --ffi --fork-url $FORK_URL --fork-block-number 15934974 --gas-report
+`export FORK_URL="<your-mainnet-rpc-url-goes-here>" && rm -Rf 2023-01-astaria || true && git clone https://github.com/code-423n4/2023-01-astaria.git -j8 --recurse-submodules && cd 2023-01-astaria && nvm install 16.0 && foundryup && forge install && yarn install && forge test --ffi --fork-url $FORK_URL --fork-block-number 15934974 --gas-report`
