@@ -112,6 +112,8 @@ For more details on the Astaria protocol and its contracts, see the [docs](https
 
 Astaria runs on [Foundry](https://github.com/foundry-rs/foundry). If you don't have it installed, follow the installation instructions [here](https://book.getfoundry.sh/getting-started/installation).
 
+Note that since this codebase uses Foundry remappings for imports, cmd/ctrl-click to jump to different files is not currently supported.
+
 To install contract dependencies, run:
 
 ```sh
