@@ -1,0 +1,1710 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q1-2023 / astaria-jan05
+==============================================================
+
+[01/04/2023 10:18] paroxysm9999 (pinned)
+👋 Hello and welcome to the contest channel for the $90,500 Astaria contest!
+
+📆 Contest opens 01/05/2023 20:00 (20:00 UTC) and runs through 01/19/2023 20:00 (20:00 UTC) (14 days).
+
+Please give a warm welcome to the Astaria team, particularly @androolloyd & @Joseph Delong, who will be available for questions either here in the channel or via DM.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+Contest Page: https://code4rena.com/contests/2023-01-astaria-contest
+
+{Embed}
+https://code4rena.com/contests/2023-01-astaria-contest
+Code4rena Astaria contest
+$90,500 USDC
+5 January 2023—19 January 2023
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/C4-banner-7C19B.png
+
+
+[01/04/2023 12:46] androolloyd
+👋
+
+{Reactions}
+👋 (14) 
+
+[01/04/2023 14:04] itsmetechjay
+Pinned a message.
+
+
+[01/05/2023 07:37] androolloyd
+If anyone encounters any issues getting spun up @ me and I’ll help right away.
+
+{Reactions}
+👀 (3) 🫡 (4) chefskiss (3) 
+
+[01/05/2023 15:57] codingnamekiki
+:PU_PeepoBlushyTips:
+
+
+[01/05/2023 20:05] thepicodes (pinned)
+**Automated findings:** https://gist.github.com/Picodes/d16459938599db69f9ad88c73a2d2990
+
+
+[01/05/2023 20:11] kartoonjoy (pinned)
+Wardens, please note that the automated findings output has been posted and added to pinned posts. These are considered publicly known issues and are not eligible for awards.
+
+**Automated findings:** 
+https://gist.github.com/Picodes/d16459938599db69f9ad88c73a2d2990
+
+This will also be linked in the contest README file shortly.
+
+{Embed}
+https://gist.github.com/Picodes/d16459938599db69f9ad88c73a2d2990
+2023-01-astaria.md
+GitHub Gist: instantly share code, notes, and snippets.
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/gist-og-image-17482.png
+
+
+[01/05/2023 20:11] kartoonjoy
+Pinned a message.
+
+
+[01/05/2023 20:11] kartoonjoy
+Pinned a message.
+
+
+[01/05/2023 21:21] justinbram
+Hey everyone! Really excited for this! Feel free to tag anyone below with any questions. 
+
+@Joseph Delong @androolloyd @santiagogregory @GregTheDev 
+@Justin Bram
+
+{Reactions}
+👍🏻 (3) 
+
+[01/06/2023 00:47] birdy0219
+👋
+
+{Reactions}
+👋🏻 (8) 
+
+[01/06/2023 08:30] c7e7eff
+The link in the Spearbit related issues in the public repo are private. Not really clear what they entail (some less so than others).
+Have those issues been resolved in the current code (as they all seem to date from 30 Nov).
+
+{Reactions}
+✅ 
+
+[01/06/2023 10:11] androolloyd
+Yes, they have been resolved, there were some informational changes that were ignored due to changes in the code from post spearbit additions(multi token, upgrability, and seaport updates)
+
+{Reactions}
+👍 (2) 
+
+[01/06/2023 10:11] androolloyd
+Spearbit has not yet delivered their compiled report so the repo is still marked private afaik.
+
+
+[01/06/2023 10:56] taek.eth
+@androolloyd should Vault accept any ERC20?
+
+
+[01/06/2023 11:54] delvir0
+@androolloyd 2 and 6 months is a mistake or am I reading it incorrectly?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/image-124E3.png
+
+
+[01/06/2023 13:27] delvir0
+Please let me know if it's ok to DM you
+
+
+[01/06/2023 15:01] c7e7eff
+As strategists are whitelisted does that mean that for the purpose of this contest they should be regarded as trusted accounts ? (i.e. no evil strategist)
+
+
+[01/06/2023 15:31] androolloyd
+they are UI whitlisted, there is nothing in the protocol but yes, evil strategists are assumed a possibility, but how the protocol works has no concept of a whitelist.
+
+
+[01/06/2023 15:31] androolloyd
+in our case we have arrangements with strategists that we will market on the app(any public vault that is deployed by an approved strategist will be visible in the UI, others will not)
+
+
+[01/06/2023 16:03] santiagogregory
+yes, both of those should say 6 months. good catch, sorry about that
+
+
+[01/06/2023 16:11] santiagogregory
+you should assume strategists can write whatever loan terms they want (which could be very unfair), but they obviously shouldnt just be able to drain user funds from a vault without issuing valid terms
+
+{Reactions}
+👍 
+
+[01/06/2023 17:41] androolloyd
+you can deploy a vault with any ERC20 yes.
+
+
+[01/06/2023 17:41] androolloyd
+however a vault can only accept the ERC20 it's been deployed with.
+
+
+[01/07/2023 07:28] stermi
+Hi there, is there an infographic that show how actors and contracts interact each other with?
+
+
+[01/07/2023 09:10] androolloyd
+Hi, I don’t think we have an actor diagram. 
+
+The Router is what most people will interact with, however vaults are designed to be interact-able directly, so that utilizing the router isn’t needed or if others wanted to compose the vaults directly into their contracts
+
+
+[01/07/2023 17:46] ladboy233
+The documentation is good.
+
+
+[01/07/2023 17:57] 0xnogo
+this would be very helpful indeed
+
+
+[01/07/2023 19:31] 0xnogo
+@androolloyd dm-ed you 🙏
+
+
+[01/07/2023 21:32] androolloyd
+Got ya.
+
+
+[01/07/2023 21:32] androolloyd
+Sorry for the delay it’s late here.
+
+
+[01/07/2023 21:33] androolloyd
+Will look at getting on together
+
+
+[01/07/2023 22:55] ladboy233
+The codebase is large, which contract should I start?
+
+
+[01/07/2023 23:40] devanoneth
+@santiagogregory Noticed another small typo in the docs, just FYI:
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/Screenshot_2023-01-08_at_00.38.31-71BD0.png
+
+
+[01/08/2023 10:36] viraz4331
+@androolloyd 
+was going through the docs, do the loan terms also specify the nft address the loan is valid for ?
+
+
+[01/08/2023 12:36] androolloyd
+yes, there are collection terms and unique terms both specify the contract address of the nft, collection terms have no id.
+
+
+[01/08/2023 17:08] viraz4331
+the missing natspec in functions etc is not very helpful 😅
+
+
+[01/08/2023 17:17] supernovahs
+@androolloyd  dmed
+
+
+[01/08/2023 17:18] supernovahs
+Is there any change/addition in code from previous audits?
+
+
+[01/08/2023 17:37] androolloyd
+Yes. Essentially a whole new protocol
+
+
+[01/08/2023 17:37] androolloyd
+There is almost no onchain state now. Liquidation flow is all different. New permission flows. Multi token. Fully upgradable.
+
+{Reactions}
+👍 (3) 
+
+[01/09/2023 05:09] viraz4331
+@androolloyd 
+need context regarding this `nlrDetails: params.validatorDetails` what is a validator in this case since based on the docs I was only aware of 3 actors
+
+
+[01/09/2023 07:16] androolloyd
+A validator is a smart contract that validates the nlr details data , we call them strategy validators. There are 3 in the repo. Unique. Collection. Univ3.
+
+
+[01/09/2023 08:52] delvir0
+@androolloyd where exactly is a public or private vault initiated/ created?
+
+
+[01/09/2023 08:56] androolloyd
+The router
+
+
+[01/09/2023 10:46] 0kage
+@androolloyd when can LPs withdraw assets for which they raise withdraw requests in the current epoch - is it at the start of the next epoch or at the end of next epoch?
+
+
+[01/09/2023 11:24] santiagogregory
+by the end of the next epoch
+
+
+[01/09/2023 11:24] androolloyd
+If you signal in epoch 0, you can withdraw at the end of epoch 1. Which is actually the start of epoch 2
+
+
+[01/09/2023 11:24] androolloyd
+Once process epoch has been called, the boundary has been passed and you can withdraw.
+
+
+[01/09/2023 11:25] santiagogregory
+sorry about the inconvenient formatting, natspec for public fns are still in interfaces
+
+
+[01/09/2023 12:25] c7e7eff
+What is the range of  epoch timespan deemed reasonable ?
+
+
+[01/09/2023 13:20] androolloyd
+the epochs are defined at the vault level when a strategist deploys them
+
+
+[01/09/2023 13:20] androolloyd
+default protocol values enforce epochs being at min 7 days, at most 45
+
+
+[01/09/2023 14:21] supernovahs
+@androolloyd dmed
+
+
+[01/09/2023 15:46] pwnforce
+@androolloyd  Dmed
+
+
+[01/09/2023 16:49] teawaterwire
+first time i see this BeaconProxy setup... that hurt my brain 😅
+
+
+[01/09/2023 16:52] santiagogregory
+hey guys if theres anything you think should be clarified or added to the docs site, ping me and i can go ahead and add it
+
+{Reactions}
+👍 
+
+[01/09/2023 17:46] chaduke3730
+gm, where are the functions _getArgUint8, etc defined?
+
+
+[01/09/2023 17:48] santiagogregory
+clones-with-immutable-args/src/Clone.sol line 78
+
+
+[01/09/2023 18:08] chaduke3730
+thanks
+
+
+[01/09/2023 18:10] trustminimised
+regarding this, the docs say 
+> [...] and whitelisted strategists can deploy PublicVaults that accept funds from other liquidity providers. (PublicVault whitelists are only enforced at the UI level.)
+Just for clarity, it's the strategists that are whitelisted (just in the UI) and not PublicVault contracts?
+
+
+[01/09/2023 19:26] androolloyd
+correct anyone can deploy a public vault, we just wont show public vaults in the ui for non approved strategists.
+
+
+[01/09/2023 19:26] androolloyd
+the UI will however load them if you enter the address of the vault directly into the url
+
+
+[01/09/2023 19:26] androolloyd
+like uniswap tokens
+
+
+[01/09/2023 19:30] trustminimised
+Oh, that's neat.
+also, nice to see you around, I recognize you from the Frame chat. 🫡
+
+
+[01/09/2023 19:33] androolloyd
+😄 frame maxi's unite!
+
+
+[01/09/2023 20:12] peakbolt
+What happens when the liquidation auction ends with no bid?
+
+
+[01/09/2023 20:38] putricioo
+why do i need a mainnet rpc url ? shouldn't i be using a testnet network like goerli
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/Captura_de_Pantalla_2023-01-09_a_las_14.35-546C7.png
+
+
+[01/09/2023 21:06] peakbolt
+i think you are supposed to fork the mainnet as there are other contracts that you need to interact with like seaport
+
+
+[01/10/2023 01:21] chaduke3730
+any doc for "Stack" and "Point" ? what are they for? https://github.com/code-423n4/2023-01-astaria/blob/main/src/interfaces/ILienToken.sol
+
+{Embed}
+https://github.com/code-423n4/2023-01-astaria/blob/main/src/interfaces/ILienToken.sol
+2023-01-astaria/ILienToken.sol at main · code-423n4/2023-01-astaria
+Contribute to code-423n4/2023-01-astaria development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/9d62cded-f3b0-4a85-90b4-5519fadcb5e1-8509D
+
+
+[01/10/2023 02:03] Oishun#3920
+Hi, are you going to deploy the testnet during this session?
+
+
+[01/10/2023 03:08] atlanticbase
+Hi, is there any docs on the `file*` functions that are implemented in `AstariaRouter.sol`? Thanks
+
+
+[01/10/2023 07:30] Oishun#3920
+What's the motivation of using merkle proof when issuing Lien?
+
+
+[01/10/2023 09:22] saksham#7993
+Any preferred starting point from where to start , docs are pretty clear but don't know which contract to pick first
+
+
+[01/10/2023 13:52] koolexc
+Hi, I have a question.
+> If a Vault offers better loan terms for the same collateral a borrower has deposited, their loan may be permissionlessly refinanced. See Refinancing for more information
+
+Is this valid for both public and private Vaults?
+
+
+[01/10/2023 14:09] santiagogregory
+they are identical to the file functions in collateraltoken, lientoken, etc. is there anything specific you were confused about?
+
+
+[01/10/2023 14:11] santiagogregory
+a Stack is a single lien/loan, and it is broken up into Lien struct data and Point struct data
+
+
+[01/10/2023 14:11] santiagogregory
+Lien struct data doesnt change throughout the loan lifecycle (things like collateral type, and Details which includes interest rate)
+
+
+[01/10/2023 14:12] santiagogregory
+Point data changes whenever a payment is made against the lien: this would update "last" to the timestamp of the payment, and subtract the payment amount from "amount"
+
+
+[01/10/2023 14:12] santiagogregory
+just makes it so we dont have to access storage more than we have to
+
+
+[01/10/2023 14:12] santiagogregory
+yes, refinancing is done through LienToken, so the logic would be same whether a publicvault or privatevault holds a lientoken
+
+
+[01/10/2023 14:13] santiagogregory
+so someone could refinance a lien from a privatevault to a publicvault, and vice versa
+
+
+[01/10/2023 14:13] koolexc
+Got it. Thank you
+
+
+[01/10/2023 14:28] atlanticbase
+I’m confused on the use case of the file functions. How they are used and for what
+
+
+[01/10/2023 14:28] santiagogregory
+theyre used to set protocol constants
+
+
+[01/10/2023 14:28] santiagogregory
+fees, minimum increases and decreases for refinancing, etc
+
+
+[01/10/2023 14:29] santiagogregory
+so the intended use case is that theyll be used infrequently by protocol maintainers (us at astaria for now)
+
+
+[01/10/2023 14:29] santiagogregory
+https://twitter.com/eth_call/status/1612646637259612160?s=20&t=MCfue7mWc0l9TdxiaruX9Q
+
+{Embed}
+horsefacts (@eth_call)
+https://twitter.com/eth_call/status/1612646637259612160?s=20&t=MCfue7mWc0l9TdxiaruX9Q
+@ColorCoded13 I guess I'd call this "the file pattern." It's a way to set storage variables without writing a separate, repetitive setter function for each one. The Maker contracts first called it "file": https://t.co/q52h0HOl25
+
+The example above is from @AstariaXYZ.
+Twitter
+
+{Reactions}
+👍🏻 (2) 
+
+[01/10/2023 14:38] atlanticbase
+I see. Thanks for the resource
+
+
+[01/10/2023 15:00] 0xnogo
+Can anyone explain the slope/yIntercept concepts in WithdrawProxy and Public Vault?
+
+
+[01/10/2023 15:10] 0xnogo
+yIntercept = amount present in the vault?
+
+
+[01/10/2023 15:10] 0xnogo
+slope = the interest rate?
+
+
+[01/10/2023 15:54] santiagogregory
+not exactly
+
+
+[01/10/2023 15:54] santiagogregory
+basically, the vault has an "implied value" which is what the vault would have in real assets (WETH, for example) if every loan was being linearly repaid
+
+
+[01/10/2023 15:55] santiagogregory
+for example, if the vault has 10 WETH, and a 4 WETH loan thats 50% done, that implied value of the vault is 12 WETH (note that this implied value isnt tracked internally)
+
+
+[01/10/2023 15:55] santiagogregory
+so here your slope would be however many weth/second that loan is accruing
+
+
+[01/10/2023 15:56] santiagogregory
+the publicvault tracks a "last" timestamp which is the last timestamp any loan was repaid, a liquidation happened, or any other state change was made (for example a processEpoch())
+
+
+[01/10/2023 15:56] santiagogregory
+the implied value of the vault is yIntercept + slope * (block.timestamp-last)
+
+
+[01/10/2023 15:56] santiagogregory
+this is how we compute how much LPs should be owed, without having to do an actual state change where we recompute how much interest has been accrued against every active loan
+
+
+[01/10/2023 15:56] santiagogregory
+we essentially move the gas cost to the stage change to whenever a loan repayment or liquidation is made
+
+
+[01/10/2023 15:57] justinbram
+Going live now! @here https://twitter.com/i/spaces/1OwxWwvmYMwxQ
+
+{Reactions}
+👆 (2) 
+
+[01/10/2023 15:57] justinbram
+We'll be taking questions about the contest
+
+
+[01/10/2023 15:57] santiagogregory
+will add this to the docs too! thanks for the question
+
+{Reactions}
+🙌 
+
+[01/10/2023 17:23] chandlerdk
+hey wardens, as we get closer to deadline, we wanted to give you more bandwidth for questions. feel free to ask me anything related to the protocol.
+
+{Reactions}
+👋 (2) 
+
+[01/10/2023 18:03] chaduke3730
+@santiagogregoryThanks alot
+
+
+[01/10/2023 18:03] santiagogregory
+no problem
+
+
+[01/10/2023 18:04] santiagogregory
+forgot to add importantly its used to price vaulttokens when depositing into a publicvault
+
+
+[01/10/2023 18:09] chaduke3730
+In LienActionEcumber, there are lien and stack (which is an array of Stack),  is this lien actually one of the liens in the stack (indexed by the position in LienActionBuyOut)?
+
+
+[01/10/2023 18:37] un_for_given
+Please let me know if it's ok to DM. @Chandler @santiagogregory  @androolloyd
+
+
+[01/10/2023 18:37] santiagogregory
+i’m free, DMs always open
+
+
+[01/10/2023 18:39] santiagogregory
+the stack does not include the new replacement lien, a new stack is generated on buyout
+
+
+[01/10/2023 18:40] devanoneth
+Last I played with `clones-with-immutable-args` it was not possible to verify them on Etherscan. Do you know if they work now?
+
+
+[01/10/2023 18:41] santiagogregory
+@androolloyd
+
+
+[01/10/2023 18:44] koolexc
+From the docs, does this mean if the loan is paid off ? just to confirm it is just a typo or maybe I am misunderstanding the concept
+> When a lien is fully paid off, its LienToken is burned
+
+
+[01/10/2023 18:46] santiagogregory
+yes haha, a lien basically == loan
+
+{Reactions}
+👍🏻 
+
+[01/10/2023 18:47] santiagogregory
+not a typo, just a term used to denote debt against an asset (like a house), could replace with loan
+
+
+[01/10/2023 19:03] chaduke3730
+@santiagogregoryall right, got it
+
+
+[01/10/2023 19:04] santiagogregory
+AstariaTest.testBuyoutLien() is a good example
+
+
+[01/10/2023 19:05] koolexc
+good to know 😄
+
+
+[01/10/2023 19:05] koolexc
+What's the Vault delegate used for?
+
+
+[01/10/2023 19:12] santiagogregory
+the delegate can also provide and sign loan terms for a Vault
+
+{Reactions}
+👍🏻 
+
+[01/10/2023 19:13] koolexc
+Thanks
+
+
+[01/10/2023 23:38] chaduke3730
+what is s.withdrawReserve  for?  what does it mean if it is equal to zero
+
+
+[01/11/2023 04:20] ladboy233
+How to make all test run?
+
+
+[01/11/2023 04:20] ladboy233
+Encountered a total of 32 failing tests, 15 tests succeeded
+
+
+[01/11/2023 04:21] ladboy233
+```solidity
+forge test --ffi --fork-url xxx --fork-block-number 15934974
+```
+
+
+[01/11/2023 04:21] ladboy233
+This is the command I run
+
+
+[01/11/2023 04:21] ladboy233
+@androolloyd
+
+
+[01/11/2023 04:30] santiagogregory
+withdrawReserve is the amount of assets owed to withdrawing LPs during the current epoch
+
+
+[01/11/2023 04:30] santiagogregory
+if its 0, that means all the funds owed to them have been transferred to the withdrawproxy for that epoch
+
+
+[01/11/2023 04:35] chaduke3730
+@santiagogregorythanks
+
+
+[01/11/2023 04:42] chaduke3730
+which mint function should a LP call to mint VaulTokens? mint() in AstariaRouter.sol  or mint() in PublicVault.sol()?
+
+
+[01/11/2023 06:38] androolloyd
+They get verified as clones and minimal proxies but in our case our clones are clones of a beacon proxy so the implementation doesn’t map on etherscan
+
+{Reactions}
+👍 
+
+[01/11/2023 06:38] androolloyd
+Did you install the sub modules?
+
+
+[01/11/2023 06:40] androolloyd
+Non public vaults you deposit into directly. As they are only able to be funded by strategists.
+
+
+[01/11/2023 06:40] androolloyd
+Public vaults, it’s best to use the router as it has slippage shielding. But it’s not required.
+
+
+[01/11/2023 09:51] teawaterwire
+i dmed you yesterday 🙏
+
+{Reactions}
+👀 
+
+[01/11/2023 13:32] un_for_given
+Please let me know if it's ok to DM now. @Chandler @santiagogregory   @androolloyd  @Joseph Delong  @GregTheDev  
+@Justin Bram
+
+
+[01/11/2023 13:34] androolloyd
+send along any questions you have.
+
+
+[01/11/2023 13:34] androolloyd
+@unforgiven
+
+
+[01/11/2023 13:36] koolexc
+@androolloyd DMed you
+
+
+[01/11/2023 15:09] ladboy233
+Which network the protocol wiill be deployed?
+
+
+[01/11/2023 15:09] ladboy233
+Is it only ethereum? or the protocol plans to go multi-chain
+
+
+[01/11/2023 16:13] santiagogregory
+eth mainnet for now
+
+
+[01/11/2023 16:26] justinbram
+Here is a Google Drive link to our recent Spearbit audit report.
+
+https://drive.google.com/file/d/11I8leH78DWbviuXjJNRTf6SzZYFVbC13/view?usp=sharing
+
+{Embed}
+https://drive.google.com/file/d/11I8leH78DWbviuXjJNRTf6SzZYFVbC13/view?usp=sharing
+astaria.pdf
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/_hOQSYivKsSjdqFXvNkojE06w22qJWUXZFnGPI5AkX-8F6DD
+
+{Reactions}
+👍 
+
+[01/11/2023 16:31] rvierdiiev
+it was done 2 days ago?
+have you addressed that issues already
+
+
+[01/11/2023 17:02] ladboy233
+@Justin Bram
+
+
+[01/11/2023 17:02] ladboy233
+Yeah is the in-scope contract for spearbit DAO audit the same for C4 audit? or the issue in spearbit DAO has already been addressed.
+
+
+[01/11/2023 17:07] ladboy233
+Are these issue automatically invalid for reward?
+
+
+[01/11/2023 17:10] rodrigoh0623
+I think the issues have been addressed. If you check the code4arena repo vs the report you can see that those issues don’t exist anymore. But let’s hear from them to be sure
+
+
+[01/11/2023 17:25] justinbram
+Yes all issues have been addressed
+
+
+[01/11/2023 17:25] justinbram
+Except for a small minority of informationals
+
+
+[01/11/2023 17:25] justinbram
+We received the official report a couple of days ago but worked with the Spearbit team this past month+ to address everything
+
+
+[01/11/2023 17:26] ladboy233
+good to know
+
+
+[01/11/2023 17:26] ladboy233
+👍
+
+
+[01/11/2023 17:26] justinbram
+I was more sharing for reference, in case it’s helpful
+
+
+[01/11/2023 18:01] fundra1s3r
+Bruh, Im new and I may be slightly stupid but... To compile a contract within Hardhat, do I need specific scripts for the specified contract? idk if this question makes sense or not
+
+
+[01/11/2023 18:27] trustminimised
+This project is using foundry and not hardhat. Are you trying to use hardhat anyway?
+
+
+[01/11/2023 18:27] acegawd
+@santiagogregory DM
+
+
+[01/11/2023 18:28] fundra1s3r
+that makes perfect sense. I am using Hardhat
+
+
+[01/11/2023 18:28] fundra1s3r
+should I make the switch to foundry ?
+
+
+[01/11/2023 18:29] trustminimised
+I think foundry is much much better than hardhat, but that's just my opinion.
+If you want to be productive in this specific contest, use the framework the project is using. They include commands at the end of the contest readme to get you set up.
+
+
+[01/11/2023 18:30] fundra1s3r
+Thank you i truly appreciate you
+
+
+[01/11/2023 18:40] acegawd
+@Justin Bram @Joseph Delong @androolloyd @GregTheDev who's available?
+
+
+[01/11/2023 20:48] ladboy233
+I realize I did not run "yarn install"
+
+
+[01/11/2023 20:48] ladboy233
+then all test run smoothly.
+
+{Reactions}
+👍 
+
+[01/11/2023 21:08] trustminimised
+Yeah, I missed that too.
+
+
+[01/12/2023 01:50] chaduke3730
+Can you explain each field of struct BuyoutLienParams {
+    uint256 lienSlope;
+    uint256 lienEnd;
+    uint256 increaseYIntercept;
+  }? What is it for?
+
+
+[01/12/2023 01:51] chaduke3730
+What doe each field mean?
+
+
+[01/12/2023 07:39] 0xnogo
+dm-ed you 🙏
+
+
+[01/12/2023 10:54] androolloyd
+If you look at what’s happening on the other side of the call, it’s pretty clear, but lienslope is the slope of the lien being bought out at the current moment, lienEnd is the end of the liens point. And the increaseYIntercept is the change to be applied to the vaults yIntercept.
+
+
+[01/12/2023 11:20] koolexc
+Where can I find more info about the 3 validators such as UNIQUE, COLLECTION ...etc?
+
+
+[01/12/2023 12:38] androolloyd
+in the stratgies folder
+
+
+[01/12/2023 12:38] androolloyd
+there are 3 validators.
+
+
+[01/12/2023 13:35] koolexc
+Thanks. I'm aware of it . Is there any more info/doc on this? What's the difference between UNIQUE and COLLECTION for example
+
+
+[01/12/2023 15:10] koolexc
+Anyone is available from the team for a DM?
+
+
+[01/12/2023 18:13] chaduke3730
+@androolloydthanks
+
+
+[01/12/2023 18:48] androolloyd
+unique requires a specific nft to be used, where as a collection will let any tokenId be valid.
+
+{Reactions}
+thankyou (2) 
+
+[01/12/2023 18:49] androolloyd
+so you can make terms ofr any asset in a colletion or to a specific asset
+
+
+[01/12/2023 19:29] trustminimised
+Is `VIData.depositCap` set to 0 indicating no cap?
+
+
+[01/12/2023 20:55] androolloyd
+correct
+
+
+[01/12/2023 21:49] chaduke3730
+where is AuctionData defined?
+
+
+[01/12/2023 22:11] trustminimised
+`ILienToken.sol`
+
+
+[01/12/2023 22:29] m9800
+@androolloyd @Joseph Delong available for dm?
+
+
+[01/12/2023 22:42] chaduke3730
+@trustminimisedthanks. found it
+
+
+[01/13/2023 10:53] koolexc
+is the doc https://docs.astaria.xyz/docs/intro up to date or is there some details that are a bit different than the code?
+
+{Embed}
+https://docs.astaria.xyz/docs/intro
+✨ What is Astaria? | Astaria Docs
+Create a doc page with rich content.
+
+
+[01/13/2023 10:54] androolloyd
+we have discovered some inconsistencies with the docs throughout the contest(thanks to yall wardens), but mechanism wise i believe its pretty accurate.
+
+{Reactions}
+👍🏻 (2) thankyou 
+
+[01/13/2023 13:07] PaludoX0#9748
+Is anyone available for dm?
+
+
+[01/13/2023 15:43] androolloyd
+i believe our dms are open, you can fire away anytime and we'll get to you as soona s we can
+
+
+[01/13/2023 18:01] teawaterwire
+out of curiosity what was the rationale for choosing the storage method for contracts? (loading slots vs inheriting storage contracts)
+
+
+[01/14/2023 08:24] captainwoof.official
+Gas savings
+
+
+[01/14/2023 09:07] captainwoof.official
+How does a borrower takes loans? What's the flow? Please correct me if I am wrong:
+
+1. Borrower transfers NFT to `CollateralToken` contract, and gets minted a Collateral token
+2. Borrower calls `commitToLien()` in a vault (`VaultImplementation`), gets minted a `LienToken`, and then receives assets on loan
+
+
+[01/14/2023 14:29] androolloyd
+also everything is a proxy and perfectly upgradable if we do slots.
+
+
+[01/14/2023 21:02] horsefacts
+stack too deep? 😹
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/Screen_Shot_2023-01-14_at_2.01.48_PM-A70AD.png
+
+
+[01/14/2023 23:45] birdy0219
+I like the gh issue on this "Stop being mean to EVM"
+
+
+[01/14/2023 23:46] androolloyd
+We have moments of zen.
+
+{Reactions}
+kekw (2) 
+
+[01/14/2023 23:46] androolloyd
+Haven’t hit this myself.
+
+
+[01/15/2023 04:30] captainwoof.official
+Need a suggestion
+
+I see that certain system contracts import ERC721. Problem is, I need to test AstariaRouter, and importing the system contracts cause a name collision for at least ERC721.
+
+How to proceed, without manually changing names?
+
+
+[01/15/2023 08:41] androolloyd
+You can rename imports, using the import as designation.
+
+
+[01/15/2023 08:41] androolloyd
+https://solidity-by-example.org/import/
+
+
+[01/15/2023 08:42] androolloyd
+import {ERC721 as Bob} from …
+
+
+[01/15/2023 08:43] androolloyd
+If you’re trying to import the router and are just importing the full file you’re declaring into the file scope all dependencies for the contract vs just importing the contract
+
+
+[01/15/2023 08:43] androolloyd
+Import {AstariaRouter} from vs import “AstariaRouter.sol”
+
+
+[01/15/2023 08:43] androolloyd
+Hope that helps
+
+
+[01/16/2023 08:50] androolloyd
+I’ve had to answer how seaport auction settlement happens a few times now so I’ll post a blurb I just shared here to help facilitate the knowledge share.
+
+
+[01/16/2023 08:50] androolloyd
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/image0-AEB97.jpg
+
+{Reactions}
+👍 
+
+[01/16/2023 16:26] evan#9648
+@Paroxysm | C4 @kartoonjoy Just confirming, this contests ends 3pm EST on the 19th (thursday) right?
+
+
+[01/16/2023 17:24] kartoonjoy
+Yes, that's correct.
+
+{Reactions}
+thankyou (2) 
+
+[01/16/2023 22:00] acegawd
+Dmed you @androolloyd
+
+
+[01/17/2023 19:17] sockdrawermoney (pinned)
+Hi, all. We've had some discussions and this PR in the Astaria repo: https://github.com/AstariaXYZ/astaria-core/pull/303 The Astaria team has been informed about the unfortunate impact this has on the contest. **In the interest of fairness, any findings addressed by the pull request will be eligible only up to the timestamp of the PR. **
+
+I'm very sorry this happened. We will continue to work to better educate sponsor dev teams on how violating the code-freeze mid-audit breaks the C4 model.
+
+
+[01/17/2023 19:22] itsmetechjay
+Pinned a message.
+
+
+[01/17/2023 19:42] koolexc
+Just for my understanding,  this is only about this PR? as I understood, that all issues have been addressed except some informational ones. so the codebase we have shouldn't have any issues that were reported by Spearbit
+
+
+[01/17/2023 19:52] m9800
+sad this happened, it´s unfair for those who send their findings at the end of the contest
+
+{Reactions}
+wd_THIS (4) empathy 
+
+[01/17/2023 19:55] m9800
+But I understand the complexity of handling the situation
+
+{Reactions}
+💜 
+
+[01/17/2023 20:01] un_for_given
+I anticipated this and asked them not to do this mistake some days ago!
+Unfortunately you can't change the future even if you can anticipate it!
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/Screenshot_20230117-232638_Discord-A46EC.jpg
+
+{Reactions}
+empathy (3) 
+
+[01/17/2023 20:02] trustminimised
+For clarity, was this PR made in response to a finding submitted by a warden? Or did they just find the issue on their own and patched it?
+
+
+[01/17/2023 20:05] sockdrawermoney
+I don't know firsthand, so I'll let them speak to it but my impression is a discussion with a warden may have informed a change they made.
+
+
+[01/17/2023 20:05] trustminimised
+Understood, thanks.
+
+
+[01/17/2023 20:06] sockdrawermoney
+afaik it's just the one PR. this was escalated to me as "Chief Bad News Messenger" lol and I don't have a lot of other context and haven't dug in directly myself
+
+{Reactions}
+thankyou 
+
+[01/17/2023 20:43] androolloyd
+Hey everyone. We fucked up here, we had a dev hacking on a whole diff problem around buyout, which resulted in a change around how it would work if we wanted to go that way, and in the effort of trying to move fast and break things, we’ll it’s clear we broke things in the wrong way.
+
+
+[01/17/2023 20:46] androolloyd
+Y’all have been so great along the way, and it’s sucks we put a bad taste in everyone’s mouth as a result of this change, it truly wasn’t intended , we got over zealous and we’re just looking to better chat about the change Santiago made as it’s hard to talk about without a change set of what that would be. 
+
+The conversations were started due to a report but it wasn’t the report that triggered the work but rather the report was also encompassed in the changes. 
+
+I am very sorry this happened and to any wardens impacted, those with any findings already submitted around buyout lien, please DM me so I have a record of who we scorned and can work to make it up to you somehow. 
+
+Sincerely sorry this happened and it’s egg on our faces that will take a bit to wash off.
+
+{Reactions}
+empathy (4) 👍 (6) 🫤 (2) 
+
+[01/17/2023 20:58] justinbram
+Sorry guys, we will do our best to come up with a solution to make things right by all.
+
+
+[01/17/2023 21:26] saksham#7993
+https://tenor.com/view/spider-man-spider-man-web-of-shadows-depressed-sad-gif-16524395
+
+{Embed}
+https://tenor.com/view/spider-man-spider-man-web-of-shadows-depressed-sad-gif-16524395
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/spider-man-spider-man-web-of-shadows-ACB4C.png
+
+
+[01/17/2023 21:26] saksham#7993
+me who could not find the buyout lien bug
+
+
+[01/17/2023 21:42] androolloyd
+im there with ya mate.
+
+
+[01/17/2023 21:42] androolloyd
+to be fair we also didnt find it lol
+
+
+[01/17/2023 21:43] androolloyd
+https://giphy.com/gifs/reaction-l36kU80xPf0ojG0Erg
+
+{Embed}
+https://giphy.com/gifs/reaction-l36kU80xPf0ojG0Erg
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/giphy_s-66A1C.gif
+
+{Reactions}
+hi5 💔 (5) 
+
+[01/18/2023 01:31] birdy0219
+sounds like an opportunity  to go looking, to learn about it pre report 🙂
+
+
+[01/18/2023 02:54] evan#9648
+it's also unfair for all other participants since this will likely reduce the number of duplicate for this issue which can impact the payouts for everybody else.
+
+
+[01/18/2023 03:21] captainwoof.official
+Ah yes, thanks for this!
+
+
+[01/18/2023 03:33] captainwoof.official
+Should've started from the top of my list instead of bottom 😭
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/Screenshot_from_2023-01-18_09-00-20-44746.jpg
+
+
+[01/18/2023 03:37] sockdrawermoney
+Agreed. Discussing this internally in terms of the approach policy-wise.
+
+
+[01/18/2023 08:11] m9800
+True
+
+
+[01/18/2023 09:54] web3sec
+I'm unable to understand the scenario completely, can we submit bugs on the Astaria contest  or not ?
+
+
+[01/18/2023 09:55] androolloyd
+you can yes, but the issue was that we pushed up some changes around buyoutLien for some new concepts we were prototyping and we didn't think that through entirely.
+
+{Reactions}
+👍🏻 ✅ (3) 
+
+[01/18/2023 09:55] androolloyd
+so sadly, anything put up after we published the PR for buyoutLien changes(and to be clear these aren't even final, just something we wanted to discuss around internall)
+
+
+[01/18/2023 09:55] androolloyd
+but its only related to buyoutLien, everything else is fair game afaik.
+
+
+[01/18/2023 09:56] web3sec
+Thanks a lot for clearing my doubts @androolloyd
+
+{Reactions}
+👍 
+
+[01/18/2023 12:54] 3dgeville#0311
+Are any of the sponers online?
+
+
+[01/18/2023 13:00] 0xhacksmithh
+Hii, Wardens, if i want to submit gas optimization report, is it mandatory to send gas report(updated) as well, or should description of each gas optimization is enough, pls answer, thank you
+
+
+[01/18/2023 13:08] androolloyd
+whats up
+
+
+[01/18/2023 13:29] 3dgeville#0311
+sending you a DM regarding a question
+
+
+[01/18/2023 17:06] josephdelong
+Y'all this was my fault. One of our devs was making a fix to a portion of the codebase that was highlighted by a warden. The fix was unrelated to the wardens message but made us take a closer look at that portion of the codebase.
+One of our developers asked me specifically to create a private repo to apply the fix he was working on. I declined the request thinking all submissions had already been made and that we were in the reporting phase.
+
+We don't yet know the scope of those effected. I am sorry and want to take full responsibility for the mistake. When we understand the full scope of those effected we will take steps to make those individuals whole.
+
+{Reactions}
+empathy (3) 
+
+[01/18/2023 17:44] caventa
+I think the new code should be merged to here
+https://github.com/code-423n4/2023-01-astaria
+
+When we submit hm findings, we need to link our affected code. I don't think it is good to link the old code.
+
+{Embed}
+https://github.com/code-423n4/2023-01-astaria
+GitHub - code-423n4/2023-01-astaria
+Contribute to code-423n4/2023-01-astaria development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/9d62cded-f3b0-4a85-90b4-5519fadcb5e1-8509D
+
+
+[01/18/2023 18:16] koolexc
+I wouldn’t prefer this. If you have issues with PoCs, they might break as the code changed
+
+{Reactions}
+👀 
+
+[01/18/2023 18:50] evan#9648
+can we just agree to not make changes anywhere public during a contest?
+
+{Reactions}
+👍🏻 
+
+[01/18/2023 18:53] m9800
+I think the code should remain the same
+
+
+[01/18/2023 18:54] m9800
+because of this
+
+{Reactions}
+👍🏻 (2) 
+
+[01/18/2023 21:18] acegawd
+@androolloyd DM
+
+
+[01/18/2023 22:50] acegawd
+Who's available? @Joseph Delong @santiagogregory @GregTheDev @Justin Bram
+
+
+[01/18/2023 22:50] santiagogregory
+i am
+
+
+[01/18/2023 22:58] evan#9648
+@santiagogregory DMed
+
+{Reactions}
+👍 
+
+[01/19/2023 08:48] saksham#7993
+Any sponsor up for a DM?
+
+
+[01/19/2023 10:44] c7e7eff
+Same question here, anyone from the sponsors I can DM ?
+
+
+[01/19/2023 13:46] m9800
+anybody knows what is the strategyValidator supposed to validate?
+
+
+[01/19/2023 13:52] koolexc
+validate the strategy chosen by the borrower
+
+
+[01/19/2023 14:12] androolloyd
+It validates the nlrDetails field. Which is bytes encoded data most of the time it’s just an Abi encoded struct but the idea is that strategy validators can be added to the protocol after deployment. 
+
+These validators allow the protocol to add new emerging types of collateral and can query any on chain data sets needed. If you look at the uniswap v3 one as an example.
+
+
+[01/19/2023 15:17] supernovahs
+Any sponsor availabe right now?
+
+
+[01/19/2023 16:15] santiagogregory
+i'm free
+
+{Reactions}
+PU_PeepoBlushyTips 
+
+[01/19/2023 17:25] santiagogregory (pinned)
+PSA, @androolloyd will be out for the rest of the contest so only i'll be free for DMs
+
+
+[01/19/2023 17:27] matrix_0wl
+Hi, I run c4udit from  https://github.com/byterocket/c4udit against 2023-01-astaria folder but got totally different output than that official from https://gist.github.com/Picodes/d16459938599db69f9ad88c73a2d2990. What am I doing wrong?
+
+{Embed}
+https://github.com/byterocket/c4udit
+GitHub - byterocket/c4udit: Static analyzer for solidity contracts ...
+Static analyzer for solidity contracts based on regexs specifically crafted for code4rena contests - GitHub - byterocket/c4udit: Static analyzer for solidity contracts based on regexs specifically ...
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/c4udit-BDF0F
+
+
+[01/19/2023 17:27] alextheentreprenerd
+Latest C4uit fork is here:
+https://github.com/Picodes/4naly3er
+
+Maintained by @Picodes | Angle
+
+{Reactions}
+👍 
+
+[01/19/2023 17:47] liveactionllamac4
+Pinned a message.
+
+
+[01/19/2023 17:58] saksham#7993
+I cant edit my QA submission , what should I do? I want add a couple of things
+
+
+[01/19/2023 18:09] liveactionllamac4
+Started a thread.
+
+
+[01/19/2023 19:24] matrix_0wl
+I run 4naly3er (latest c4uit fork) and got different output than that official from https://gist.github.com/Picodes/d16459938599db69f9ad88c73a2d2990. Is it because of false positives that was deleted manually from official c4uit report?
+
+
+[01/19/2023 19:59] justinbram
+final minute :sheyes:
+
+
+[01/19/2023 20:02] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **Astaria** contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a gardener if you have questions along the way!
+
+{Reactions}
+👍 (19) 
+
+[01/19/2023 23:27] androolloyd
+Thank you to all of the wardens who have been working on our code base. So many great questions and so many many of them 😉
+
+{Reactions}
+hi5 (14) 
+
+[01/19/2023 23:27] androolloyd
+I hope you’ll all come try it out when we’re live and critique the user experience from top to bottom. 
+
+10/10 would work with y’all again.
+
+{Reactions}
+hi5 (26) 🎉 (5) 
+
+[02/05/2023 16:40] praise95
+Any update?
+
+{Reactions}
+👀 (3) 
+
+[02/08/2023 18:53] saksham#7993
+👀
+
+{Reactions}
+👀 (4) 
+
+[02/09/2023 23:13] xyzbtchunt
+Any update serrrr?
+
+
+[02/10/2023 15:12] ladboy233
+👁️
+
+
+[02/10/2023 16:39] saksham#7993
+Judging finished for this one?
+
+
+[02/10/2023 16:43] pfapostol
+On Tuesday, it hasn't even started, so it's unlikely. https://discord.com/channels/810916927919620096/810929015509483554/1072264374074495088
+
+
+[02/10/2023 16:44] saksham#7993
+It was a big one that's why maybe
+
+
+[02/11/2023 06:11] xyzbtchunt
+Maybe next week judging
+
+
+[02/13/2023 22:25] un_for_given
+Still in presort?
+Which algorithm are you using to sort them?😄
+
+{Reactions}
+😂 (4) 
+
+[02/14/2023 04:01] pfapostol
+most likely a lot of reports. Since there were a lot of them on the last audit on Sherlock, I won’t be surprised if there are even more of them on C4
+
+
+[02/14/2023 23:32] xyzbtchunt
+Any update?
+
+{Reactions}
+👍 
+
+[02/17/2023 16:00] praise95
+👀
+
+{Reactions}
+👀 (2) 
+
+[02/19/2023 15:12] xyzbtchunt
+:chefskiss:
+
+{Reactions}
+👀 (4) 
+
+[02/19/2023 19:06] ladboy233
+👁️
+
+
+[02/20/2023 10:27] 14si2o_flint
+First contest so I have nothing to compare, but it is normal they haven't started judging a month after the close of the contest? Seems oddly long...
+
+
+[02/20/2023 10:34] pfapostol
+this is OK for large contests with a big number of participants
+
+{Reactions}
+👍 
+
+[02/21/2023 13:46] gtocoder#7898
+My first contest also, expecting a large number of reports on this one, could be off, but it will affect judging time more if so
+
+
+[02/22/2023 08:03] xyzbtchunt
+https://tenor.com/view/pedro-monkey-puppet-meme-awkward-gif-15268759
+
+{Embed}
+https://tenor.com/view/pedro-monkey-puppet-meme-awkward-gif-15268759
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/pedro-monkey-puppet-66918.png
+
+
+[02/23/2023 07:22] xyzbtchunt
+When??
+
+
+[02/24/2023 03:35] xyzbtchunt
+Is the judging still being done?
+
+
+[02/24/2023 06:38] pfapostol
+Just because you spam every day doesn't make judging faster. Please be respectful of other wardens who use the channel for professional purposes.
+
+{Reactions}
+same (4) 👍 (12) thankyou (4) 😂 (5) 
+
+[02/24/2023 12:40] praise95
+He is  expectant and excited 😅
+
+
+[02/24/2023 12:52] pfapostol
+Nobody forbids being excited. But when someone will ask a relevant question, no one will answer because everyone mute the channel due to spam.
+
+{Reactions}
+💯 (3) 
+
+[02/24/2023 12:52] .tointer
+It took me one full day to make one report for this contest with PoC and everything, couldn't imagine how many work judges need to do
+
+
+[02/24/2023 12:53] praise95
+🫡
+
+
+[02/28/2023 08:07] xyzbtchunt
+:thisisfine:
+
+{Reactions}
+😂 (15) thisisfine (4) 🥹 (2) 
+
+[03/02/2023 23:21] un_for_given
+https://github.com/code-423n4/code423n4.com/pull/7905/files
+
+{Embed}
+https://github.com/code-423n4/code423n4.com/pull/7905/files
+Update Leaderboard Mar02 by liveactionllama · Pull Request #7905 · ...
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/98446738-1A1F9
+
+
+[03/02/2023 23:22] un_for_given
+(draft)
+8257.11 >> @obront
+6900.43 >> @rvierdiiev
+4896.7 >> @Koolex
+4790.7 >> @KIntern_NA
+4450.66 >> @cccz
+4377.2 >> @evan
+3683.6 >> @Ruhum
+3266.31 >> @0xladboy | Sparkware
+3097.92 >> @bin2chen
+2628.65 >> @peakbolt
+2271.28 >> @kaden
+2166.13 >> @Jeiwan
+1959.34 >> @unforgiven
+1432.33 >> @chaduke
+1331.31 >> @0xbepresent
+1275.09 >> @gtocoder
+1211.97 >> @caventa
+850.06 >> @pwnforce
+765.06 >> @horsefacts
+708.73 >> @PaludoX0
+
+21 High
+34 Medium
+
+{Reactions}
+👍 (9) 
+
+[03/02/2023 23:26] ladboy233
+😂
+
+
+[03/02/2023 23:27] ladboy233
+fine
+
+
+[03/02/2023 23:27] iam0x52
+C4 needs to employ this man
+
+{Reactions}
+😄 (15) 
+
+[03/02/2023 23:27] ladboy233
+lol
+
+
+[03/02/2023 23:28] peakbolt
+agree
+
+
+[03/02/2023 23:56] chaduke3730
+congratso to all
+
+{Reactions}
+💚 (2) 
+
+[03/03/2023 01:59] birdy0219
+I swear the more time I spend on the contest, the less I get 🤷‍♂️
+
+
+[03/03/2023 02:02] birdy0219
+Probably didn't help that the code base change effected one of my findings and the team didn't get back to me :Sad_Squidward_Pepe:
+
+
+[03/03/2023 07:25] pwnforce
+My first solo finding! 😃🎊
+
+{Reactions}
+🎉 (10) 👏 (5) 🍺 (2) 
+
+[03/03/2023 14:34] manikantanynala97
+Hi @chaduke  can I ping you please
+
+
+[03/03/2023 14:35] manikantanynala97
+I have sent you a friend request
+
+
+[03/03/2023 16:51] itsmetechjay
+:code4rena:  💸 🎉 Awards for **Astaria**:
+
+$8,257.12 USDC » @obront 
+$6,900.46 USDC » @rvierdiiev 
+$4,896.70 USDC » @Koolex 
+$4,790.71 USDC » KIntern_NA (@TrungOre, @duc, @Trumpero)
+$4,450.67 USDC » @cccz 
+$4,377.21 USDC » @evan 
+$3,683.60 USDC » @Ruhum 
+$3,266.31 USDC » @0xladboy | Sparkware 
+$3,097.93 USDC » @bin2chen 
+$2,628.65 USDC » @peakbolt 
+$2,271.29 USDC » @Kaden 
+$2,166.13 USDC » @Jeiwan 
+$1,959.35 USDC » @unforgiven 
+$1,432.33 USDC » @chaduke 
+$1,331.31 USDC » @0xbepresent 
+$1,275.09 USDC » @gtocoder 
+$1,211.98 USDC » @!0xcaventa 
+$850.06 USDC » @pwnforce 
+$765.06 USDC » @horsefacts 
+$708.72 USDC » @PaludoX0 
+$673.06 USDC » @HE1M 
+$672.65 USDC » @Rolezn 
+$641.83 USDC » @RaymondFam 
+$616.49 USDC » @0xSmartContract 
+$557.15 USDC » @csanuragjain 
+$548.01 USDC » @m9800 
+$472.10 USDC » @c3phas 
+$450.89 USDC » @rbserver 
+$433.71 USDC » @adriro 
+$430.48 USDC » @c7e7eff/RustyRabbit 
+$414.47 USDC » @pfapostol 
+$408.99 USDC » @joestakey 
+$363.16 USDC » @0xSurena 
+$363.16 USDC » CloudX (@Migue, @pabliyo, @marce1993)
+$339.14 USDC » @zaskoh 
+$333.35 USDC » @0Kage 
+$306.53 USDC » @Tointer
+$291.64 USDC » @fs0c 
+$290.13 USDC » @0x1f8b 
+$290.13 USDC » @IllIllI 
+$290.13 USDC » @0xAgro 
+$262.76 USDC » @0xsomeone 
+$253.34 USDC » @Kaysoft 
+$253.34 USDC » @nicobevi.eth 
+$253.34 USDC » @Kiki 
+$253.34 USDC » @a12jmx 
+$253.34 USDC » @slvDev 
+$181.63 USDC » @gz627 
+$176.55 USDC » @Lotus 
+$165.48 USDC » Apocalypto (@cRat1st0s, @lucyoa, @M0ndoHEHE)
+$165.48 USDC » @jesusrod15 
+$160.44 USDC » @bluebird 
+$158.14 USDC » @0xcm 
+$137.49 USDC » @cergyk 
+$120.41 USDC » @ast3ros 
+$104.25 USDC » @7siech 
+$95.45 USDC » @ayeslick 
+$88.11 USDC » @chrisdior4 
+$88.11 USDC » @0xkato 
+$88.11 USDC » @fatherOfBlocks 
+$88.11 USDC » @shark 
+$88.11 USDC » @nogo 
+$88.11 USDC » @code-cipher 
+$69.09 USDC » @Breeje 
+$69.09 USDC » @eierina 
+$69.09 USDC » @Josiah 
+$69.09 USDC » @JC 
+$69.09 USDC » @yongskiws 
+$69.09 USDC » @JTs 
+$51.32 USDC » @thinklab 
+$51.32 USDC » @descharre 
+$51.32 USDC » @arialblack14 
+$51.32 USDC » @Sathish9098 
+$51.32 USDC » @georgits 
+$51.32 USDC » @btk 
+$51.32 USDC » @Delvir0 
+$51.32 USDC » @seeu 
+$51.32 USDC » @ch0bu 
+$51.32 USDC » @Cryptor 
+$51.32 USDC » @whilom 
+$51.32 USDC » @Raiders 
+$51.32 USDC » @simon135 
+$51.32 USDC » @sakshamguruji 
+$51.32 USDC » @delfin454000 
+$51.32 USDC » @oberon 
+$51.32 USDC » @jasonxiale 
+$51.32 USDC » @lukris02 
+$51.32 USDC » @Deekshith99 
+$51.32 USDC » @tnevler 
+$51.32 USDC » @Qeew 
+$51.32 USDC » @Deivitto
+
+
+[03/03/2023 16:51] itsmetechjay
+$44.14 USDC » @tsvetanovv 
+$43.21 USDC » @Lirios 
+$36.79 USDC » @Rahoz 
+$36.79 USDC » @Bnke 
+$36.79 USDC » @SadBase 
+$36.79 USDC » @0xackerman 
+$36.79 USDC » @Rageur 
+$36.79 USDC » @ReyAdmirado 
+$33.24 USDC » @dragotanqueray 
+$33.24 USDC » @wallstreetvilkas 
+$25.33 USDC » @++Jujic#5558 
+$25.33 USDC » @Bjorn_Bug 
+
+🏁 Findings summary
+---------------------------
+High risk findings: 88 total, 21 unique
+Med risk findings: 85 total, 34 unique
+Gas reports: 28 
+QA reports: 62
+
+Awards will be distributed on Polygon within the next week. Congratulations, everyone! 💸 💸 💸
+
+*If you participated in this contest and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+🥳 (16) 🙌 (5) hi5 (3) code4rena (5) 🎉 (2) 👏 (3) 🥲 C4Keycap (2) 
+
+[03/03/2023 17:55] .qeew
+@0xladboy | Sparkware steady lads...always steady
+
+
+[03/03/2023 18:15] ladboy233
+https://tenor.com/view/kapha-gif-24236576
+
+{Embed}
+https://tenor.com/view/kapha-gif-24236576
+Code4rena - ARCHIVE-Q1-2023 - astaria-jan05 [1060136720844210176].txt_Files/kapha-D09CD.png
+
+{Reactions}
+topofthemorning (3) 
+
+[03/03/2023 19:06] delvir0
+Is it possible to see the submissions? I forgot what I had send lol
+
+
+[03/03/2023 19:45] a12jmx
+You should have an email linked to your personal submissions when you submit. Check your email.
+
+{Reactions}
+❤️ 
+
+[03/04/2023 13:16] m9800
+you can also check findings.csv repo
+
+
+[05/23/2023 07:52] delvir0
+I think I've been assigned a reward by mistake. When Looking at the leaderboard, I do not see any findings. I'm also not included in any of the findings in the report. @Jay | C4
+
+
+[05/23/2023 10:13] 0xbtk
+https://github.com/code-423n4/2023-01-astaria-findings/issues/58
+
+{Embed}
+https://github.com/code-423n4/2023-01-astaria-findings/issues/58
+Anyone can create a public vault · Issue #58 · code-423n4/2023-01-a...
+Lines of code https://github.com/code-423n4/2023-01-astaria/blob/main/src/AstariaRouter.sol#L544-L575 Vulnerability details Impact As stated in the docs, only whitelisted addresses should be able t...
+
+{Reactions}
+thankyou (2) 
+
+[05/23/2023 10:17] delvir0
+ah thank you
+
+
+==============================================================
+Exported 319 message(s)
+==============================================================
